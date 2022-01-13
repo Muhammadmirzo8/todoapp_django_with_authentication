@@ -10,7 +10,7 @@ class Task(models.Model):
         User, on_delete=models.CASCADE, null=True, blank=True)
     
     def __str__(self):
-        return f"{self.title}, deadline:{self.deadline}"
+        return f"{self.title}, created_date{self.created_date} deadline:{self.deadline}"
     
     class Meta: 
         ordering = ['complete']
